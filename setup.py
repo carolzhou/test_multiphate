@@ -2,7 +2,7 @@
 
 from setuptools import setup
 
-setup(name='multiphate',
+setup(name='test_multiphate',
 	version='0.1.5',
 	description='Phage annotation pipeline',
 	author='Carol Zhou',
