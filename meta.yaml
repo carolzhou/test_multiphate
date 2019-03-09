@@ -1,5 +1,5 @@
 {% set version = "v0.1.8" %}
-{% set sha256 = "aa2e6d2c0f99b2905817a8173e0d474cf64fef9098e5ea449a76a1167a913f1f" %}
+{% set sha256 = "71aff08e607f3cb54a87b7856fe29083c05eb4aa040fa3b35f3fde50f559b5b5" %}
 
 package:
   name: test_multiphate 
@@ -34,7 +34,7 @@ test:
     - prodigal -v
     - jackhmmer -h
     - transeq --version
-    - python __main__.py usage
+    - test_multiphate usage
 
 about:
   home: https://github.com/carolzhou/test_multiphate.git
