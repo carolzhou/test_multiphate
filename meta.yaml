@@ -1,0 +1,50 @@
+{% set version = "v0.1.7" %}
+{% set sha256 = "88b8e520a0cc1187e36e23945a48864f854cd40f85a30b65a0f971cc4e339dd7" %}
+
+package:
+  name: test_multiphate 
+  version: '{{ version }}' 
+
+source:
+  url: https://github.com/carolzhou/test_multiphate/archive/v0.1.7.tar.gz
+  sha256: '{{ sha256 }}' 
+
+build:
+  number: 1 
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  host:
+    - python
+  run:
+    - python
+    - biopython
+    - trnascan-se
+    - blast
+    - glimmer
+    - prodigal
+    - hmmer
+    - emboss
+    
+test:
+  commands:
+    - trnascan-se -h
+    - blastp -version
+    - prodigal -v
+    - jackhmmer -h
+    - transeq --version
+
+about:
+  home: https://github.com/carolzhou/test_multiphate.git
+  license: BSD-3
+  license_family: BSD
+  license_file: BSD-3.pdf
+  summary: de novo annotation of phage genome sequence
+  dev_url: https://github.com/carolzhou/test_multiphate
+
+extra:
+  identifiers:
+    - biotools:test_multiphate
+    - doi:10.1101/551010
+
