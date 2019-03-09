@@ -1,12 +1,12 @@
-{% set version = "v0.1.8" %}
-{% set sha256 = "71aff08e607f3cb54a87b7856fe29083c05eb4aa040fa3b35f3fde50f559b5b5" %}
+{% set version = "v0.1.9" %}
+{% set sha256 = "" %}
 
 package:
   name: test_multiphate 
   version: '{{ version }}' 
 
 source:
-  url: https://github.com/carolzhou/test_multiphate/archive/v0.1.8.tar.gz
+  url: https://github.com/carolzhou/test_multiphate/archive/v0.1.9.tar.gz
   sha256: '{{ sha256 }}' 
 
 build:
@@ -34,7 +34,7 @@ test:
     - prodigal -v
     - jackhmmer -h
     - transeq --version
-    - test_multiphate usage
+    - test-multiphate usage
 
 about:
   home: https://github.com/carolzhou/test_multiphate.git
