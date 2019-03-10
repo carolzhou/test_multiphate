@@ -12,6 +12,6 @@ setup(name='test_multiphate',
             'console_scripts':[
                 'test_multiphate=test_multiphate.__main__:main',
             ]
-        }
+        },
 	packages=[],
 	)
