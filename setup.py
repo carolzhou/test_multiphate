@@ -8,10 +8,10 @@ setup(name='test_multiphate',
 	author='Carol Zhou',
 	author_email='zhou4@llnl.gov',
 	url='https://github.com/carolzhou/test_multiphate',
-        entry_points={
-            'console_scripts':[
-                'test_multiphate=test_multiphate.__main__:main',
-            ]
-        },
 	packages=[],
-	)
+        entry_points={
+            'console_scripts': [
+                'test_multiphate=test_multiphate.__main__:main',
+            ],
+        },
+)
