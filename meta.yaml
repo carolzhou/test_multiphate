@@ -1,4 +1,4 @@
-{% set version = "v0.1.12" %}
+{% set version = "v0.1.13" %}
 {% set sha256 = "" %}
 
 package:
@@ -6,7 +6,7 @@ package:
   version: '{{ version }}' 
 
 source:
-  url: https://github.com/carolzhou/test_multiphate/archive/v0.1.12.tar.gz
+  url: https://github.com/carolzhou/test_multiphate/archive/v0.1.13.tar.gz
   sha256: '{{ sha256 }}' 
 
 build:
