@@ -22,11 +22,7 @@ setup(name='test_multiphate',
             'test_multiphate': ['README.md', "BSD-3.pdf'],
         },
         entry_points={
-            'console_scripts': [
-                'test_multiphate=__main__:main',
-            ],
-            'scripts': [
-                './test_multiphate',
-            ],
+            'console_scripts': ['test_multiphate=__main__:main']
+            'scripts': ['multiPhate'],
         },
 )
