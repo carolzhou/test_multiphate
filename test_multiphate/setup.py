@@ -1,9 +1,10 @@
 #!/usr/bin/env python
+#error in test_multiphate setup command: ("EntryPoint must be in 'name=module:attrs [extras]' format", 'multiPhate')
 
 from setuptools import setup
 
 setup(name='test_multiphate',
-	version='0.1.16',
+	version='0.1.17',
 	description='Phage annotation pipeline',
 	author='Carol Zhou',
 	author_email='zhou4@llnl.gov',
@@ -20,6 +21,6 @@ setup(name='test_multiphate',
         python_requires='~=3.4',
         entry_points={
             'console_scripts': ['test_multiphate=__main__:main'],
-            'scripts': ['multiPhate'],
+            'scripts': ['test_multiphate=multiPhate'],
         },
 )
