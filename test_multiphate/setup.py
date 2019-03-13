@@ -18,11 +18,8 @@ setup(name='test_multiphate',
             'hmmer',
         ],
         python_requires='~=3.4',
-        package_data={
-            'test_multiphate': ['README.md', "BSD-3.pdf'],
-        },
         entry_points={
-            'console_scripts': ['test_multiphate=__main__:main']
+            'console_scripts': ['test_multiphate=__main__:main'],
             'scripts': ['multiPhate'],
         },
 )
